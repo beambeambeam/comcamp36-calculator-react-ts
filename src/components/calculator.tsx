@@ -37,10 +37,9 @@ const Calculator = () => {
 
     try {
       const calcResult = parseFloat(eval(display).toFixed(3));
-      setDisplay(calcResult.toString());
-      setShowResult(true);
+      // TODO: ?
     } catch {
-      setDisplay("Error");
+      // TODO: ?
     }
   };
 
@@ -49,13 +48,13 @@ const Calculator = () => {
 
     switch (value) {
       case "AC":
-        setDisplay("");
+        // TODO: ?
         break;
       case "C":
         setDisplay(display.slice(0, -1));
         break;
       case "EQUALS":
-        calculateResult();
+        //TODO: ?
         break;
       default:
         handleInput(value);
@@ -87,12 +86,12 @@ const Calculator = () => {
   const resultClass = "text-[1.7rem]";
 
   return (
-    <div className="min-w-[320px] bg-black flex flex-col gap-4 p-4 rounded-2xl">
-      <div className="overflow-x-auto bg-[#141414] min-h-[100px] flex items-end justify-end flex-col p-4 rounded-[10px]">
+    <div className="min-w-[320px] bg-black flex flex-col gap-4 p-4">
+      <div className="overflow-x-auto bg-[#141414] min-h-[100px] flex items-end justify-end flex-col p-4">
         <div
           className={`${showResult ? resultClass : operationClass} text-white`}
         >
-          {display}
+          {/* TODO:? */}
         </div>
       </div>
       <div className="grid grid-cols-[repeat(4,1fr)] gap-[0.3rem]">

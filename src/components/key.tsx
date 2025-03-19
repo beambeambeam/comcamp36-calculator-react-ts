@@ -5,17 +5,18 @@ interface KeyProp {
 }
 
 const Key = ({ label, keyClass, onButtonClick }: KeyProp) => {
-  const equalClass =
-    "col-[span_2] bg-[#4ccdc6] text-[#1a261a] font-semibold hover:bg-[#4CCDC6] text-red-500";
+  const equalClass = "col-[span_2]";
 
-  const baseClass =
-    "bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]";
+  const baseClass = "flex cursor-pointer items-center justify-center";
 
   const combinedClass = `${baseClass} ${keyClass ? equalClass : ""}`;
 
   return (
-    <div className={combinedClass} onClick={() => onButtonClick(label)}>
-      {label}
+    <div
+      className={"TODO: what class?"}
+      onClick={() => onButtonClick("TODO: click what?")}
+    >
+      {/* TODO: ? */}
     </div>
   );
 };
