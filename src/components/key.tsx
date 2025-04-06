@@ -13,10 +13,10 @@ const Key = ({ label, keyClass, onButtonClick }: KeyProp) => {
 
   return (
     <div
-      className={"TODO: what class?"}
+      className={combinedClass}
       onClick={() => onButtonClick("TODO: click what?")}
     >
-      {/* TODO: ? */}
+      X{/* TODO: Fix this! */}
     </div>
   );
 };

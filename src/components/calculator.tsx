@@ -38,8 +38,9 @@ const Calculator = () => {
     try {
       const calcResult = parseFloat(eval(display).toFixed(3));
       // TODO: ?
+      setShowResult(true);
     } catch {
-      // TODO: ?
+      // TODO: if error then?
     }
   };
 
@@ -91,13 +92,14 @@ const Calculator = () => {
         <div
           className={`${showResult ? resultClass : operationClass} text-white`}
         >
-          {/* TODO:? */}
+          x
         </div>
       </div>
       <div className="grid grid-cols-[repeat(4,1fr)] gap-[0.3rem]">
         {keys.map((item, index) => (
           <Key
-            label={item}
+            // TODO: fix what label?
+            label={"X"}
             key={index}
             keyClass={item === "EQUALS" ? "equals" : ""}
             onButtonClick={handleButtonClick}
